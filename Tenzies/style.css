@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom, white , black);
+    padding: 10px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: green;
+    background: white;
+    width: 100%;
+    box-shadow: 0px 5px 11px 1px black;
+    border-radius: 0px 10px; 
+    
+}
+.navbar>h1{
+    margin: 0;
+}
+.navbar>ul{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 10px;
+    list-style: none;
+    font-size: 13px;
+    align-items: center;
+    
+}
+
+main {
+    margin-top: 20px;
+    background-image: linear-gradient(to bottom, green , transparent);
+    height: 80vh;
+    max-width: 900px;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+        
+}
+main>h1{
+    color: white;
+}
+.die-container{
+    display: grid;
+    grid-template: auto auto/repeat(5, 1fr);
+    gap: 20px;
+    
+}
+.die-text{
+    width: 70%;
+    opacity: 50%;
+    text-align: center;
+}
+.Die-face{
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+}
+.Die-face:hover{
+   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.15);
+   transition: 0.2s ease-in-out;
+   transform: scale(0.9); 
+}
+
+
+.die-num{
+    font-size: 20px;
+    color: white;
+}
+
+.button{
+    margin-top: 10px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 5px 15px;
+    cursor: pointer;
+    width: 50%;
+    box-shadow: 0px 0px 7px 2px white;
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+.button:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+    
+    
+}
+.button:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
